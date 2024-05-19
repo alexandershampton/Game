@@ -14,20 +14,20 @@ Menu::~Menu()
 
 void Menu::mainTab()
 {
-    cout << attack << "\n" << magic << "\n" << items << endl;
+    cout << "--------------------------------------------------\n" << attack << "\n" << magic << "\n" << items << "\n" << "Input: ";
 }
 
-void Menu::attackTab(unique_ptr<Character>& mainCharacte)
+void Menu::attackTab(unique_ptr<Character>& mainCharacter)
 {
     cout << "ENEMIES: " << endl;
 }
 
-void Menu::magicTab(unique_ptr<Character>& mainCharacte)
+void Menu::magicTab(unique_ptr<Character>& mainCharacter)
 {
     cout << "MAGIC TYPES:" << endl;
 }
 
-void Menu::itemsTab(unique_ptr<Character>& mainCharacte)
+void Menu::itemsTab(unique_ptr<Character>& mainCharacter)
 {
     cout << "ITEMS:" << endl;
 }

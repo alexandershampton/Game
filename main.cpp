@@ -10,12 +10,15 @@ void getInput(unique_ptr<Character>& mainCharacter)
 {
     string stringInput;
     unique_ptr<Menu> menu = make_unique<Menu>();
-    menu->mainTab();
+    
     while(!((stringInput == "Attack") || (stringInput == "Magic") || (stringInput == "Item")))
     {
+        menu->mainTab();
         cin >> stringInput;
     }
 
+    cout << "\n";
+    system("clear");
     menu->checkInput(mainCharacter, stringInput);
 }
 
