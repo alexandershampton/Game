@@ -3,10 +3,6 @@
 
 using namespace std;
 
-Character::Character(): name(), hp(), xp(), xpLevel(), xpRemaining()
-{
-}
-
 //Character constructor
 Character::Character(const string newName,  const int newHP, const int newXP, const int newXPLevel, const int newXPRemaining):
     name(newName),
@@ -17,6 +13,9 @@ Character::Character(const string newName,  const int newHP, const int newXP, co
 {
 }    
    
+Character::~Character()
+{
+}
 //This method makes a Character attack another character based off of random die rolls
 void Character::attack(Character &otherCharacter)
 {

@@ -13,8 +13,8 @@ private:
 
 //Character methods and constructor
 public:
-    Character();
     Character(const string newName, const int newHP, const int newXP, const int newXPRemaining, const int newXPLevel);
+    ~Character();
     void print(ostream&) ;
     void attack(Character &otherCharacter) ;
     void damage(int amount) ;
